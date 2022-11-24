@@ -1369,6 +1369,16 @@ define Device/glinet_gl-x750
 endef
 TARGET_DEVICES += glinet_gl-x750
 
+define Device/glinet_gl-zlwl9531
+  SOC := qca9531
+  DEVICE_VENDOR := LWMESH
+  DEVICE_MODEL := GL-ZLWL9531
+  DEVICE_PACKAGES := kmod-usb2 kmod-ath10k-ct ath10k-firmware-qca9887-ct
+  IMAGE_SIZE := 16000k
+endef
+TARGET_DEVICES += glinet_gl-zlwl9531
+
+
 define Device/hak5_lan-turtle
   $(Device/tplink-16mlzma)
   SOC := ar9331
